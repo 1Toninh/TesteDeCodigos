@@ -1,8 +1,8 @@
 
 /*3. Faça um algoritmo que leia um número inteiro e mostre uma mensagem indicando se este número é par ou ímpar, e se é positivo ou negativo.*/
 
-let num = prompt("Digite um número: ");
-
+let num = document.getElementById('a');
+document.getElementById('resultado').innerHTML = 'Resultado: '+ num;
 
 if (Math.sign(num) == 1 && num % 2 == 0){
 		console.log(`O número ${num} é positivo e par`);
