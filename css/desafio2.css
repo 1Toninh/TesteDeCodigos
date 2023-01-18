@@ -57,7 +57,7 @@ input, textarea {
   vertical-align: middle;
 }
 
-input[type="submit"] {
+button {
   display: block;
   width: 60%;
   margin: 1em auto;

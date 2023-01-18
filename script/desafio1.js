@@ -1,42 +1,45 @@
 /*1. Escreva um programa que, dado quatro valores, A, B, C e D, imprima o maior e o menor valor*/
 
-let a = document.getElementById('a');
-let b = document.getElementById('b');
-let c = document.getElementById('c');
-let d = document.getElementById('d');
-document.getElementById('resultado').innerHTML = 'Resultado: '+ numeroMaior + numeroMenor;
+// let a = document.getElementById('a');
+// let b = document.getElementById('b');
+// let c = document.getElementById('c');
+// let d = document.getElementById('d');
 
 function numeroMaior(a, b, c, d) {
     if (a > b && a > c && a > d) {
-        console.log(a);
+        return a;
     }
     else if (b > a && b > c && b > d) {
-        console.log(b);
+        return b;
     }
     else if (c > a && c > b && c > d) {
-        console.log(c);
+        return c;
     }
     else if (d > a && d > c && d > b) {
-        console.log(d);
+        return d;
     }
 }
 function numeroMenor(a, b, c, d) {
     if (a < b && a < c && a < d) {
-        console.log(a);
+        return a;
     }
     else if (b < a && b < c && b < d) {
-        console.log(b);
+        return b;
     }
     else if (c < a && c < b && c < d) {
-        console.log(c);
+        return c;
     }
     else if (d < a && d < c && d < b) {
-        console.log(d);
+        return d;
     }
 }
 
-numeroMenor(a, b, c, d);
+function apertarBotao() {
+    document.querySelector('#resultado').innerHTML = 'RESULTADO <br> Número maior: ' +
+    numeroMaior(10, 27, 21, 12) + '<br>Número menor: ' +
+    numeroMenor(17, 15, 32, 40);
+}
 
-numeroMaior(a, b, c, d);
+// numeroMenor(a, b, c, d);
 
-
+// numeroMaior(a, b, c, d);
